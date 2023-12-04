@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tela.css">
+    <link rel="stylesheet" href="respons.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <a href="">
+                   <h4>DevYachts</h4>
+            </a>
+         
+        </div>
+       
+            <ion-icon id="btn-clos" name="close"></ion-icon>
+
+        <ul class="menu">
+            <li class="activo">
+                <a href="">
+                    <ion-icon name="home"></ion-icon>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <ion-icon name="home"></ion-icon>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="icon">icon</i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="icon">icon</i>
+                    <span>Home</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="header-wraper">
+            <div class="header-title">
+                <button id="btn">&#9776;</button>
+                <span>Assing</span>
+            </div>
+            
+            <div class="search-box">
+            <div class="user-info">
+                <ion-icon name="search"></ion-icon>
+                <input type="search" name="search" placeholder="Pesquisar">
+            </div>
+            </div>
+        </div>
+        <div class="header-wraper2">
+            <div class="header-title">
+              <h4> All tasks </h4>
+            </div>
+            
+            <div class="search-box2">
+            <div class="user-info">
+                <ion-icon name="megaphone"></ion-icon>
+                <span>DevYachts</span> / task / list
+            </div>
+            </div>
+        </div>
+        <div class="header-wraper3">
+            <div class="header-title3">
+              <button class="dark-blue">Filter</button>
+              <button class="dark-blue">Status All</button>
+            </div>
+            
+            <div class="search-box2">
+            <div class="user-info">
+                <button class="green"> <ion-icon name="Refresh"></ion-icon>Refresh</button>
+                <button class="orange-bla"> <ion-icon name="Create"></ion-icon>Profile</button>
+                <button class="dark-blue"> <ion-icon name="add-circle"></ion-icon>New Task</button>
+            </div>
+            </div>
+        </div>
+        <div class="header-wraper4">
+            <div class="header-title4">
+              <a href="" class="activ">Overview</a>
+              <a href="task.html">Task</a>
+              <a href="">Calendar</a>
+              <a href="">Kanban</a>
+              <a href="">Activity</a>
+              <a href="">Files</a>
+              <a href="">Notes</a>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <h3 class="main-title"> Hoje </h3>
+            <div class="card-wraper">
+                <div class="payment-card green">
+                    <div class="card-header ">
+                        <ion-icon name="document"></ion-icon>
+                        <div class="amount">
+                            <span class="title">
+                                 Required </span>
+                                 <span class="amount-value">
+                                    0
+                                 </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-card dark-blue">
+                    <div class="card-header">
+                        <ion-icon name="repeat"></ion-icon>
+                        <div class="amount">
+                            <span class="title">
+                                 Reopened </span>
+                                 <span class="amount-value">
+                                    0
+                                 </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-card orange-bla">
+                    <div class="card-header">
+                        <ion-icon name="person"></ion-icon>
+                        <div class="amount">
+                            <span class="title">
+                                 Assigned </span>
+                                 <span class="amount-value">
+                                    0
+                                 </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-card viollet">
+                    <div class="card-header">
+                        <ion-icon name="play"></ion-icon>
+                        <div class="amount">
+                            <span class="title">
+                                 Start </span>
+                                 <span class="amount-value">
+                                    0
+                                 </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-card red">
+                    <div class="card-header">
+                        <ion-icon name="pause"></ion-icon>
+                        <div class="amount">
+                            <span class="title">
+                                 Paused </span>
+                                 <span class="amount-value">
+                                    0
+                                 </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-card done">
+                    <div class="card-header">
+                        <ion-icon name="done-all"></ion-icon>
+                        <div class="amount">
+                            <span class="title">
+                                 Done </span>
+                                 <span class="amount-value">
+                                    0
+                                 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tabular-wraper">
+            <div class="borda">
+                <h5>Last 30 dias</h5>
+            </div>
+            <div class="borda2">
+                <h5>Current Month-Task Created</h5>
+            </div>
+            <div class="footer">
+                <h5>Completed within 30 days</h5>
+            </div>
+        </div>
+       
+    </div>
+    <script src="custom.js"></script>
+    <script src = "https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"> </script>
+</body>
+</html>

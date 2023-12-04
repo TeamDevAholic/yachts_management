@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+}
+body{
+    display: flex;
+    background: #045184;
+    position: relative;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: #a8a8a8;
+    border-radius: 5px;
+}
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all .5s linear;
+    background: #223349;
+}
+.sidebar-mod{
+    width: 110px;
+    transition: .5s;
+    overflow-x: hidden;
+}
+.logo{
+    height: 80px;
+    padding: 16px;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li{
+    padding: 1rem;
+    margin:8px 0 ;
+    border-radius: 8px;
+    transition: all .5s ease-in-out;
+    border-bottom: 1px solid #fff;
+}
+.menu li:hover, .activo{
+    background: #e0e0e058;
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu a span{
+    overflow: hidden;
+}
+.menu a ion-icon{
+    color: #fff;
+    font-size: 1.9rem;
+}
+/*  **** main body section ****  */
+.main-content{
+    position: relative;
+    width:100% ;
+    padding: 5px;
+}
+.header-wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #223349;
+    padding: 0.1rem 2rem;
+    margin-bottom: 1rem;
+}
+.header-wraper2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.1rem 2rem;
+    margin-bottom: 1rem;
+    margin-top: 17px;
+}
+.header-wraper3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.1rem 2rem;
+    margin-bottom: 1rem;
+    margin-top: 17px;
+}
+.header-title4{
+    border-bottom: 1px solid #6c757d;
+}
+.header-title4 .activ{
+    border-bottom: 3px solid #223349;
+}
+.header-title4 a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 50px;
+}
+.header-title3 button{
+    padding: 10px 12px;
+    color: #fff;
+}
+.header-title{
+    color: #fff;
+}
+#btn-clos {
+    display: none;
+}
+.header-title button{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.user-info button{
+    padding: 5px;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .5s ease-out;
+}
+.user-info button:hover{
+    box-shadow: 1px 2px 3px rgb(143, 142, 142);
+}
+.search-box{
+    background: rgb(237,237,237);
+    border-radius: 5px;
+    color: #045184;
+    display: flex;
+    align-items: center;
+    gap:5px ;
+    padding: 2px 2px;
+}
+.search-box2{
+    border-radius: 5px;
+    color: #045184;
+    display: flex;
+    align-items: center;
+    gap:5px ;
+    padding: 2px 4px;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.search-box input{
+    background: transparent;
+    padding: 1px;
+}
+.search-box ion-icon{
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all .5s ease-out;
+}
+.search-box ion-icon:hover{
+    transform: scale(1.2);
+}
+/*  **** Card container ****  */
+.card-container{
+    
+    padding: 2rem;
+    border-radius: 10px;
+}
+.card-wraper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.main-title{
+    color: #045184;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+.payment-card{
+    background: rgb(223, 229, 225);
+    border-radius: 3px;
+    padding: 1.2rem;
+    width: 170px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .5s ease-in-out;
+}
+.payment-card:hover{
+    transform: translateY(-5px);
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.card-header ion-icon{
+    font-size: 30px;
+}
+.amount{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font: 12px;
+    font-weight: 200;
+    color: #fff;
+}
+.amount-value{
+    font-size: 17px;
+    font-weight: 100;
+    color: #fff;
+}
+.con{
+    color: #045184;
+}
+ 
+/*  colors dos cards   */
+.green{
+    background:#00bc8c;
+}
+.dark-blue{
+    background:#3f6791 ;
+}
+.orange-bla{
+    background:#f39c12 ;
+}
+.viollet{
+    background: #6f42c1;
+}
+.red{
+    background: #e74c3c;
+}
+.done{
+    background: #6c757d;
+}
+/* Colunas */
+.tabular-wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.borda{
+    border:1px solid #fff;
+    width: 50%;
+    height: 350px;
+    padding: .3rem;
+    margin-bottom: 20px;
+}
+.borda2{
+    border:1px solid #fff;
+    width: 49%;
+    height: 350px;
+    padding: .3rem;
+    margin-bottom: 20px;
+}
+h5{
+    color: #fff;
+}
+.footer{
+    background: #223349;
+    width: 96.3%;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+}
+.card{
+    width: 100%;
+    height: 350px;
+    padding: .3rem;
+    margin-bottom: 20px;
+
+}
+.tabular-header{
+    display: flex;
+}
+.table-container{
+    width: 100%;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+}
+.icons button{
+    display: block;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 5px 8px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 3px;
+}
+.download{
+    display: flex;
+    align-items: center;
+}
+.download p{
+    margin: 10px;
+}
+.icons p{
+    color: #fff;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+thead{
+    background: #223349;
+    color: #fff;
+    font-size: 11px;
+}
+tbody{
+    background: #fff;
+}
+th{
+    padding: 9px;
+    text-align: left;
+}
+td{
+    padding: 15px;
+    font-size: 14px;
+    color: #223349;
+}
+tr:nth-child(even){
+    background: #fff;
+}
+.paginacao{
+    text-align: center;
+    background: #223349;
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    margin-top: 50px;
+}
+.paginacao button{
+    cursor: pointer;
+    background: none;
+    color: #fff;
+}
+.paginacao .ativo{
+    background: #045184;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Calendario  */
+.container{
+    color: #fff;
+    display: flex;
+}
+.left{
+    width: 100%;
+    padding: 20px;
+}
+.calendar{
+    position: relative;
+    width: 170%;
+    height:100% ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #223349;
+    border-radius: 5px;
+    background: #fff;
+}
+.calendar::after,
+.calendar::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left:100%;
+    width: 12px;
+    height: 97%;
+    border-radius: 0 5px 5px 0;
+    background: #d3d5d6d7;
+    transform: translateY(-50%);
+}
+.calendar::before{
+    height:94%;
+    left: calc(100% + 12px);
+    background: rgb(153, 153, 153);
+}
+.calendar .mounth{
+    width:100% ;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: .5s;
+}
+.calendar .mounth{
+    cursor: pointer;
+}
+.calendar .mounth .prev:hover,
+.calendar .mounth .next:hover{
+    color: #045184;
+}
+.calendar .dias-semana{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.calendar .dias-semana div{
+    width: 14.28%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calendar .dias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: .4s;
+}
+.calendar .dias .dia{
+    width: 10.28%;
+    height: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d3d5d6d7;
+    transition: .4s;
+}
+.calendar  .dia:not(.prev-date, .next-date):hover{
+    color: #fff;
+    background: #223349;
+}

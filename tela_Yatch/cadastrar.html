@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="X">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cad.css">
+    <title> Cadastrar </title>
+</head>
+<body>
+    
+    <div class="form">
+        <div class="header"> 
+            <h2>Criar conta</h2>
+            <p>Seja bem vindo </p>
+         </div>
+        <div class="body">
+            <div class="paginacao">
+                <div class="numero activo">1</div>
+                <div class="corpo"></div>
+                <div class="numero">2</div>
+                <div class="corpo"></div>
+                <div class="numero">3</div>
+                <div class="corpo"></div>
+                <div class="numero">4</div>
+            </div>
+            <div class="passos">
+                <div class="passo">
+                    <h4> Dados pessoais </h4>
+                    <p> Apenas ira levar alguns segundos para preencher
+                         alguns campos necessarios para poder criar sua conta
+                          e entrar no nosso site
+                         </p>
+                    <div class="grid">
+                        <div class="col">
+                            <label for="nome">Name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="col">
+                            <label for="last_name">Last name</label>
+                            <input type="text" name="last_name" id="last_name">
+                        </div>
+                        <div class="col">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="col">
+                            <label for="">langauge</label>
+                            <select name="langauge" id="langauge">
+                            <option value="">Select</option>
+                            <option value="">Português</option>
+                            <option value="">Ingles</option>
+                           </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="passo">
+                    <h4> Sexo </h4>
+                    <p>  </p>
+                    <div class="grid">
+                        <div class="checkbox">
+                            <input name="sexo" type="checkbox" id="box">
+                            <label for="box"> Masculino </label>
+                        </div>
+                        <div class="checkbox">
+                            <input name="sexo" type="checkbox" id="box2">
+                            <label for="box2"> Femenino </label>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="passo">
+                    <h4> Proteja a sua conta </h4>
+                    <p> Recomendamos-lhe que define uma senha super potente para evitar invasões e que não vá se esquer com facilidade  </p>
+                    <div class="grid">
+                        <div class="col">
+                            <label for="senha">Password</label>
+                            <input type="password" name="senha" id="senha">
+                        </div>
+                        <div class="col">
+                            <label for="confirmar_senha">Confirmar Password</label>
+                            <input type="password" name="confirmar_senha" id="confirmar_senha">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="passo">
+                    <div class="confirmacao">
+                        <h4> Criar minha conta </h4>
+                        <p> Muitos parabéns por ter concluido com os passos necessarios, agora já podese ter acesso ao nosso site </p>
+                        <div>
+                            <button> Criar </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <button class="prev" disabled> Voltar </button>
+            <button class="next"> Proximo </button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
